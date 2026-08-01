@@ -1,0 +1,7 @@
+<svg width="360" height="104" viewBox="0 0 360 104" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M52 4L92 17V47C92 72.5 75.8 90.7 52 99C28.2 90.7 12 72.5 12 47V17L52 4Z" fill="#BFEAFF" stroke="#0A1F33" stroke-width="7" stroke-linejoin="round"/>
+  <path d="M68 35C63.9 30.6 58.5 28.5 51.8 28.5C42.6 28.5 36.5 32.8 36.5 39.5C36.5 54.8 69.5 47.5 69.5 66C69.5 74.4 62.4 79.5 51.8 79.5C43.4 79.5 36.8 76.6 32.5 70.8" stroke="#0A1F33" stroke-width="7" stroke-linecap="round"/>
+  <path d="M29 19L19 29" stroke="#42BFF5" stroke-width="6" stroke-linecap="round"/>
+  <text x="116" y="65" fill="#0A1F33" font-family="Arial, Helvetica, sans-serif" font-size="48" font-weight="900" letter-spacing="-2">SECTO</text>
+  <text x="118" y="88" fill="#087EB9" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" letter-spacing="2.2">LEARN. PRACTICE. PROTECT.</text>
+</svg>

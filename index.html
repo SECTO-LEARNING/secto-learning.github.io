@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SECTO is a beginner-first cybersecurity learning platform for coding, Linux, networking, and secure development.">
+  <title>SECTO — Cybersecurity Learning from Zero</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/site.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main>
+    <div class="notice-bar">
+      <span>SECTO FRONTEND BETA</span>
+      <p>Learn cybersecurity from absolute zero — clear, guided, and practical.</p>
+    </div>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="SECTO home">
+        <img class="brand-logo" src="assets/secto-logo.svg" alt="SECTO — Learn. Practice. Protect.">
+      </a>
+      <button class="menu-button" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span></button>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#courses">Courses</a><a href="#paths">Paths</a><a href="#practice">Practice</a><a href="#pricing">Pricing</a><a href="#about">About</a>
+      </nav>
+      <div class="header-actions">
+        <label class="language-picker">
+          <span class="sr-only">Select language</span>
+          <select id="languageSelect" aria-label="Select language">
+            <option>English</option><option>Urdu</option><option>Hindi</option><option>Arabic</option><option>Spanish</option><option>French</option><option>German</option><option>Portuguese</option><option>Chinese</option><option>Japanese</option><option>Korean</option>
+          </select>
+        </label>
+        <a class="button button-small" href="#pricing">Explore membership</a>
+      </div>
+    </header>
+
+    <section class="hero section-shell" id="top">
+      <div class="hero-copy">
+        <div class="eyebrow"><span></span> Beginner-first cyber learning</div>
+        <h1>Start curious.<br><em>Become cyber-ready.</em></h1>
+        <p class="hero-text">SECTO turns confusing technology into clear lessons, guided roadmaps, and safe practice—built for people who have never coded before.</p>
+        <div class="hero-actions">
+          <a class="button" href="#courses">Explore courses <span>→</span></a>
+          <a class="text-link" href="#paths">View learning roadmap <span>↘</span></a>
+        </div>
+        <div class="hero-proof" aria-label="Platform highlights">
+          <div><strong>40+</strong><span>planned courses</span></div>
+          <div><strong>12</strong><span>guided paths</span></div>
+          <div><strong>11</strong><span>major languages</span></div>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-label="Student dashboard preview">
+        <div class="sky-block sky-block-one"></div><div class="sky-block sky-block-two"></div>
+        <article class="dashboard-card">
+          <div class="dash-top"><div><span class="tiny-label">TODAY'S PATH</span><h2>Cyber Foundations</h2></div><span class="status-dot">LIVE</span></div>
+          <div class="progress-row"><div class="progress-ring"><span>28%</span></div><div><strong>4 of 14 modules</strong><p>Next: How networks talk</p></div></div>
+          <div class="lesson-list">
+            <div class="lesson complete"><span>✓</span><p>Inside a computer</p><small>12 min</small></div>
+            <div class="lesson complete"><span>✓</span><p>Files and folders</p><small>18 min</small></div>
+            <div class="lesson active"><span>▶</span><p>How networks talk</p><small>24 min</small></div>
+            <div class="lesson"><span>04</span><p>Your first terminal</p><small>20 min</small></div>
+          </div>
+          <div class="daily-card"><span class="streak-icon">7</span><div><strong>Day streak</strong><p>Keep your momentum going.</p></div><span>+50 XP</span></div>
+        </article>
+        <div class="floating-note"><span>SAFE LAB</span><strong>Browser practice</strong><p>Guided • Isolated • Beginner-friendly</p></div>
+      </div>
+    </section>
+
+    <div class="language-message section-shell" id="languageMessage" role="status" hidden></div>
+
+    <section class="values-strip" aria-label="SECTO learning principles">
+      <div><span>01</span><strong>No experience required</strong></div><div><span>02</span><strong>Learn in the right order</strong></div><div><span>03</span><strong>Practice safely</strong></div><div><span>04</span><strong>Build proof of skill</strong></div>
+    </section>
+
+    <section class="courses section-shell section-space" id="courses">
+      <div class="section-heading"><div><span class="kicker">COURSE LIBRARY</span><h2>A clear first step,<br>whatever your goal.</h2></div><p>Start with fundamentals, then move into coding, systems, networks, and defensive security at your own pace.</p></div>
+      <div class="filter-row" aria-label="Filter courses">
+        <button class="filter active" data-filter="All">All</button><button class="filter" data-filter="Foundations">Foundations</button><button class="filter" data-filter="Coding">Coding</button><button class="filter" data-filter="Systems">Systems</button><button class="filter" data-filter="Networks">Networks</button><button class="filter" data-filter="Defense">Defense</button><button class="filter" data-filter="Web">Web</button>
+      </div>
+      <div class="course-grid">
+        <article class="course-card" data-category="Foundations"><div class="course-top"><span class="course-number">01</span><span class="course-level">Start here</span></div><span class="course-category">Foundations</span><h3>Computer Basics for Cyber</h3><p>Understand files, operating systems, browsers, and how computers communicate.</p><div class="course-meta"><span>18 lessons</span><span>4 hours</span></div><button class="course-link">Preview syllabus <span>→</span></button></article>
+        <article class="course-card" data-category="Coding"><div class="course-top"><span class="course-number">02</span><span class="course-level">Beginner</span></div><span class="course-category">Coding</span><h3>Python from Zero</h3><p>Learn variables, conditions, loops, and small security-focused programs.</p><div class="course-meta"><span>26 lessons</span><span>8 hours</span></div><button class="course-link">Preview syllabus <span>→</span></button></article>
+        <article class="course-card" data-category="Systems"><div class="course-top"><span class="course-number">03</span><span class="course-level">Beginner</span></div><span class="course-category">Systems</span><h3>Linux &amp; Command Line</h3><p>Navigate Linux confidently and understand the tools used by security teams.</p><div class="course-meta"><span>22 lessons</span><span>6 hours</span></div><button class="course-link">Preview syllabus <span>→</span></button></article>
+        <article class="course-card" data-category="Networks"><div class="course-top"><span class="course-number">04</span><span class="course-level">Beginner</span></div><span class="course-category">Networks</span><h3>Networking Explained</h3><p>See how IP addresses, DNS, ports, and protocols connect the internet.</p><div class="course-meta"><span>24 lessons</span><span>7 hours</span></div><button class="course-link">Preview syllabus <span>→</span></button></article>
+        <article class="course-card" data-category="Defense"><div class="course-top"><span class="course-number">05</span><span class="course-level">Beginner</span></div><span class="course-category">Defense</span><h3>Cybersecurity Essentials</h3><p>Recognize common threats and learn practical, defensive security habits.</p><div class="course-meta"><span>20 lessons</span><span>5 hours</span></div><button class="course-link">Preview syllabus <span>→</span></button></article>
+        <article class="course-card" data-category="Web"><div class="course-top"><span class="course-number">06</span><span class="course-level">Intermediate</span></div><span class="course-category">Web</span><h3>Secure Web Development</h3><p>Build safer websites by understanding validation, access, and secure design.</p><div class="course-meta"><span>28 lessons</span><span>9 hours</span></div><button class="course-link">Preview syllabus <span>→</span></button></article>
+      </div>
+    </section>
+
+    <section class="paths section-space" id="paths">
+      <div class="section-shell">
+        <div class="section-heading light-heading"><div><span class="kicker">GUIDED ROADMAPS</span><h2>Never wonder what<br>to learn next.</h2></div><p>Each path arranges lessons, quizzes, and projects in the order a complete beginner actually needs.</p></div>
+        <div class="path-grid">
+          <article class="path-card path-blue"><div class="path-number">01</div><span>For complete beginners</span><h3>Cyber Foundations</h3><ol><li>Computer basics</li><li>Internet &amp; networks</li><li>Linux essentials</li><li>Security ethics</li></ol><button>Open roadmap <span>↗</span></button></article>
+          <article class="path-card path-navy"><div class="path-number">02</div><span>Learn to monitor and defend</span><h3>Security Analyst</h3><ol><li>Threat awareness</li><li>Log analysis</li><li>Incident basics</li><li>SOC projects</li></ol><button>Open roadmap <span>↗</span></button></article>
+          <article class="path-card path-aqua"><div class="path-number">03</div><span>Build safer applications</span><h3>Secure Developer</h3><ol><li>HTML, CSS &amp; JS</li><li>Python</li><li>Web security</li><li>Secure coding projects</li></ol><button>Open roadmap <span>↗</span></button></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="practice section-shell section-space" id="practice">
+      <div class="practice-copy"><span class="kicker">SAFE PRACTICE</span><h2>Learn it. Try it.<br>Understand it.</h2><p>Every concept is followed by a guided exercise. This frontend demonstrates the experience; live code execution will require an isolated backend service later.</p><ul class="check-list"><li><span>✓</span> Step-by-step instructions</li><li><span>✓</span> Helpful hints, not confusing errors</li><li><span>✓</span> Legal and defensive learning scenarios</li></ul></div>
+      <div class="lab-window">
+        <div class="lab-header"><div class="window-dots"><i></i><i></i><i></i></div><span>password-checker.py</span><small>DEMO</small></div>
+        <div class="lab-body">
+          <div class="code-lines" aria-label="Python example"><code><span class="line-no">1</span><b>password</b> = <i>&quot;learn-securely&quot;</i></code><code><span class="line-no">2</span></code><code><span class="line-no">3</span><em>checks</em> = {</code><code><span class="line-no">4</span>&nbsp;&nbsp;<i>&quot;long_enough&quot;</i>: <b>len</b>(password) &gt;= 12,</code><code><span class="line-no">5</span>&nbsp;&nbsp;<i>&quot;has_symbol&quot;</i>: <b>any</b>(not c.isalnum()</code><code><span class="line-no">6</span>&nbsp;&nbsp;&nbsp;&nbsp;<em>for</em> c <em>in</em> password)</code><code><span class="line-no">7</span>}</code></div>
+          <button class="run-button" id="runDemo">Run safe demo <span>▶</span></button>
+          <div class="terminal-output" id="terminalOutput" aria-live="polite"><span>OUTPUT</span><p>Press “Run safe demo” to see the result.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pricing section-space" id="pricing">
+      <div class="section-shell pricing-shell">
+        <div class="pricing-intro"><span class="kicker">FOUNDING MEMBERSHIP</span><h2>One simple plan.<br>A full year to grow.</h2><p>A low launch price for learners joining SECTO from the beginning. Regional pricing can be added when real payments are connected.</p><div class="pricing-note"><strong>Transparent beta notice</strong><p>This is a frontend preview. No payment is collected and no course is actually locked yet.</p></div></div>
+        <article class="price-card"><div class="price-card-top"><span>SECTO FOUNDING</span><small>12 MONTHS</small></div><div class="price"><sup>$</sup><strong>14.99</strong><span>/ year</span></div><p>Planned introductory international price</p><ul><li>All beginner and advanced courses</li><li>Guided career learning paths</li><li>Practice challenges and projects</li><li>Progress dashboard and certificates</li><li>New lessons added regularly</li></ul><button class="button price-button" id="membershipButton">Preview membership <span>→</span></button><small class="renewal">No automatic charge in this preview.</small></article>
+      </div>
+    </section>
+
+    <section class="about section-shell section-space" id="about">
+      <div class="about-mark" aria-hidden="true">S</div>
+      <div class="about-copy"><span class="kicker">AN ANONYMOUS-BUILDER PROJECT</span><h2>Built to make the first step feel possible.</h2><p>SECTO is an independent learning-platform concept focused on clear explanations, responsible security education, and beginner confidence. The creator's identity stays private; the work speaks through the product.</p><div class="about-details"><div><span>MISSION</span><strong>Cyber education without unnecessary complexity.</strong></div><div><span>PORTFOLIO</span><strong>Product design, frontend development, and learning UX.</strong></div></div></div>
+    </section>
+
+    <section class="cta-section"><div class="section-shell cta-inner"><div><span class="kicker">BUILD FROM ZERO</span><h2>Your cyber journey can start here.</h2></div><a class="button button-dark" href="#courses">Explore the library <span>→</span></a></div></section>
+
+    <footer class="footer section-shell">
+      <div class="footer-brand"><a class="brand" href="#top"><img class="brand-logo" src="assets/secto-logo.svg" alt="SECTO — Learn. Practice. Protect."></a><p>Cybersecurity learning for complete beginners.</p></div>
+      <div class="footer-links"><div><strong>Learn</strong><a href="#courses">Courses</a><a href="#paths">Roadmaps</a><a href="#practice">Practice</a></div><div><strong>Platform</strong><a href="#pricing">Pricing</a><a href="#about">About</a><a href="#top">Beta notice</a></div><div><strong>Legal</strong><a href="#top">Privacy</a><a href="#top">Terms</a><a href="#top">Responsible use</a></div></div>
+      <div class="footer-bottom"><span>© 2026 SECTO Learning</span><span>Frontend beta • No payments collected</span></div>
+    </footer>
+  </main>
+</body>
+</html>
