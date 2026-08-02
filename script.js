@@ -56,7 +56,7 @@ document.querySelector('#membershipButton')?.addEventListener('click', () => {
   window.alert('SECTO is currently a frontend beta. Secure membership payments will be added with the backend.');
 });
 
-document.querySelectorAll('.course-link, .path-card button').forEach((button) => {
+document.querySelectorAll('.path-card button').forEach((button) => {
   button.addEventListener('click', () => {
     window.alert('This content will open when the full course pages are added.');
   });

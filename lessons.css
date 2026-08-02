@@ -1,0 +1,125 @@
+/* SECTO Starter Academy */
+.lesson-header{border-bottom:1px solid var(--line)}
+.lesson-nav{align-items:center;gap:26px;margin-left:auto;margin-right:24px;display:flex}
+.lesson-nav a{color:var(--muted);font-size:11px;font-weight:800}
+.lesson-nav a:hover{color:var(--sky-600)}
+.lesson-hero{grid-template-columns:1fr 360px;align-items:center;gap:80px;min-height:500px;padding-top:70px;padding-bottom:70px;display:grid}
+.lesson-hero h1{color:var(--navy);letter-spacing:-.07em;margin:18px 0 24px;font-size:clamp(3rem,5.8vw,5.3rem);font-weight:900;line-height:.97}
+.lesson-hero h1 em{color:var(--sky-500);font-style:normal}
+.lesson-hero>div>p{max-width:720px;color:var(--muted);font-size:15px;line-height:1.8}
+.lesson-progress-card{border:1px solid var(--navy);box-shadow:10px 10px 0 var(--sky-200);background:#fff;padding:30px}
+.lesson-progress-card>span{color:var(--sky-600);letter-spacing:.13em;font-size:9px;font-weight:900}
+.lesson-progress-card>strong{color:var(--navy);letter-spacing:-.06em;margin:16px 0 18px;font-size:50px;line-height:1;display:block}
+.lesson-progress-card>strong b{font-weight:900}
+.lesson-progress-track{background:var(--sky-100);height:10px;overflow:hidden}
+.lesson-progress-track i{background:var(--sky-500);width:0;height:100%;transition:width .3s ease;display:block}
+.lesson-progress-card p{color:var(--muted);margin:15px 0 0;font-size:10px;line-height:1.6}
+.learning-rules{border:1px solid #f0da72;background:var(--yellow);grid-template-columns:170px 1fr;align-items:center;gap:25px;padding:20px 24px;display:grid}
+.learning-rules strong{color:var(--navy);text-transform:uppercase;letter-spacing:.1em;font-size:10px}
+.learning-rules p{color:#5d572e;margin:0;font-size:11px;line-height:1.65}
+.course-menu{border:1px solid var(--line);border-top:0;grid-template-columns:repeat(3,1fr);margin-top:0;display:grid}
+.course-menu a{border-right:1px solid var(--line);border-bottom:1px solid var(--line);color:var(--navy);align-items:center;gap:13px;min-height:64px;padding:0 20px;font-size:11px;font-weight:800;display:flex}
+.course-menu a:nth-child(3n){border-right:0}
+.course-menu a:nth-child(n+4){border-bottom:0}
+.course-menu a:hover{background:var(--sky-50);color:var(--sky-600)}
+.course-menu span{color:var(--sky-600);font-size:8px;font-weight:900}
+.lesson-course{scroll-margin-top:20px}
+.lesson-course-tint{background:var(--sky-50);border-top:1px solid var(--sky-200);border-bottom:1px solid var(--sky-200)}
+.lesson-course-dark{background:var(--navy)}
+.lesson-course-heading{grid-template-columns:1fr 360px;align-items:end;gap:60px;margin-bottom:42px;display:grid}
+.lesson-course-heading h2{color:var(--navy);letter-spacing:-.06em;margin:12px 0 0;font-size:clamp(2.5rem,4.5vw,4.3rem);line-height:1}
+.lesson-course-heading>p{color:var(--muted);margin:0 0 5px;font-size:13px;line-height:1.75}
+.lesson-course-dark .lesson-course-heading h2{color:#fff}
+.lesson-course-dark .lesson-course-heading>p{color:#a9bdcb}
+.lesson-card{border:1px solid var(--line);background:#fff;max-width:950px;margin:0 auto 24px;padding:34px}
+.lesson-card:last-child{margin-bottom:0}
+.lesson-card-top{border-bottom:1px solid var(--line);justify-content:space-between;padding-bottom:18px;display:flex}
+.lesson-card-top span{color:var(--sky-600);letter-spacing:.12em;font-size:9px;font-weight:900}
+.lesson-card-top small{color:var(--muted);letter-spacing:.08em;font-size:8px;font-weight:800}
+.lesson-card h3{color:var(--navy);letter-spacing:-.045em;margin:26px 0 16px;font-size:30px;line-height:1.1}
+.lesson-card>p{color:var(--muted);margin:0 0 15px;font-size:13px;line-height:1.85}
+.lesson-card>p strong{color:var(--navy)}
+.lesson-card code{font-family:var(--font-geist-mono),monospace}
+.concept-grid,.secure-design-grid{border-top:1px solid var(--line);border-left:1px solid var(--line);grid-template-columns:repeat(4,1fr);margin:26px 0;display:grid}
+.concept-grid>div,.secure-design-grid>div{border-right:1px solid var(--line);border-bottom:1px solid var(--line);min-height:125px;padding:18px}
+.concept-grid span,.secure-design-grid span{color:var(--sky-600);letter-spacing:.1em;font-size:8px;font-weight:900}
+.concept-grid p,.secure-design-grid p{color:var(--muted);margin:10px 0 0;font-size:10px;line-height:1.65}
+.safe-task{border-left:4px solid var(--sky-400);background:var(--sky-50);margin:25px 0;padding:18px 20px}
+.safe-task strong{color:var(--sky-600);letter-spacing:.12em;font-size:8px}
+.safe-task p{color:var(--muted);margin:8px 0 0;font-size:11px;line-height:1.7}
+.lesson-example{border:1px solid var(--line);background:#fff;margin:25px 0;padding:20px}
+.lesson-example>span{color:var(--sky-600);letter-spacing:.11em;font-size:8px;font-weight:900;display:block}
+.lesson-example code{color:var(--navy);background:var(--sky-100);margin:12px 0;padding:10px 12px;font-size:12px;display:inline-block}
+.lesson-example p{color:var(--muted);margin:0;font-size:10px;line-height:1.65}
+.lesson-code{color:#d8eef8;background:#071725;margin:24px 0;padding:22px;overflow-x:auto}
+.lesson-code code{white-space:pre;font-size:11px;line-height:1.8}
+.command-table{border:1px solid var(--line);margin:24px 0}
+.command-table>div{border-bottom:1px solid var(--line);grid-template-columns:180px 1fr;align-items:center;min-height:55px;display:grid}
+.command-table>div:last-child{border-bottom:0}
+.command-table code{color:var(--sky-600);background:var(--sky-50);align-self:stretch;align-items:center;padding:0 18px;font-size:11px;font-weight:800;display:flex}
+.command-table span{color:var(--muted);padding:0 18px;font-size:10px}
+.network-flow{border:1px solid var(--line);grid-template-columns:1fr 36px 1fr 36px 1fr 36px 1fr;align-items:center;margin:25px 0;display:grid}
+.network-flow span{background:var(--sky-50);color:var(--navy);place-items:center;min-height:80px;padding:12px;text-align:center;font-size:10px;font-weight:850;display:grid}
+.network-flow i{color:var(--sky-600);text-align:center;font-size:9px;font-style:normal;font-weight:900}
+.compact-concepts>div{min-height:105px}
+.cia-grid{grid-template-columns:repeat(3,1fr);gap:12px;margin:24px 0;display:grid}
+.cia-grid div{background:var(--navy);color:#fff;align-items:center;gap:14px;padding:18px;display:flex}
+.cia-grid b{background:var(--sky-400);color:var(--navy);place-items:center;width:40px;height:40px;display:grid}
+.cia-grid span{font-size:11px;font-weight:800}
+.defense-steps{border-top:1px solid var(--line);margin:25px 0}
+.defense-steps>div{border-bottom:1px solid var(--line);grid-template-columns:45px 1fr;align-items:center;min-height:58px;display:grid}
+.defense-steps span{color:var(--sky-600);font-size:9px;font-weight:900}
+.defense-steps p{color:var(--muted);margin:0;font-size:11px}
+.defense-steps b{color:var(--navy)}
+.knowledge-check{border:1px solid var(--line);margin:25px 0 18px;padding:20px}
+.knowledge-check>strong{color:var(--navy);font-size:11px;line-height:1.55;display:block}
+.knowledge-check>div{flex-wrap:wrap;gap:8px;margin-top:14px;display:flex}
+.knowledge-check button{border:1px solid var(--line);color:var(--muted);cursor:pointer;background:#fff;padding:9px 12px;font-size:10px;font-weight:750}
+.knowledge-check button:hover{border-color:var(--sky-400);color:var(--navy)}
+.knowledge-check .correct-answer{border-color:#0c8969;background:var(--mint);color:#075b46}
+.knowledge-check .wrong-answer{border-color:#e6a4a4;background:#fff2f2;color:#9d3e3e}
+.quiz-result{min-height:16px;margin:12px 0 0;font-size:10px;font-weight:750}
+.quiz-success{color:#08785d}.quiz-retry{color:#a05252}
+.complete-lesson{border:1px solid var(--navy);background:var(--sky-400);color:var(--navy);cursor:pointer;min-width:190px;padding:12px 16px;font-size:10px;font-weight:900}
+.complete-lesson:hover{box-shadow:4px 4px 0 var(--navy);transform:translate(-2px,-2px)}
+.complete-lesson.is-complete{background:var(--mint);border-color:#0b8063;color:#08604b}
+.source-grid{border-top:1px solid var(--line);border-left:1px solid var(--line);grid-template-columns:repeat(4,1fr);display:grid}
+.source-grid a{border-right:1px solid var(--line);border-bottom:1px solid var(--line);min-height:180px;padding:22px;transition:background .2s,transform .2s}
+.source-grid a:hover{background:var(--sky-50);transform:translateY(-3px)}
+.source-grid span{color:var(--sky-600);letter-spacing:.12em;font-size:8px;font-weight:900}
+.source-grid strong{color:var(--navy);margin:17px 0 10px;font-size:13px;line-height:1.4;display:block}
+.source-grid p{color:var(--muted);margin:0;font-size:10px;line-height:1.6}
+.originality-note{border:1px solid var(--sky-200);background:var(--sky-50);margin-top:24px;padding:22px}
+.originality-note strong{color:var(--navy);font-size:11px}
+.originality-note p{color:var(--muted);margin:8px 0 0;font-size:10px;line-height:1.7}
+.lesson-footer{margin-top:0}
+
+@media (width<=900px){
+  .lesson-hero{grid-template-columns:1fr;gap:40px}
+  .lesson-progress-card{width:min(420px,100%)}
+  .lesson-course-heading{grid-template-columns:1fr;gap:20px}
+  .source-grid{grid-template-columns:repeat(2,1fr)}
+  .concept-grid,.secure-design-grid{grid-template-columns:repeat(2,1fr)}
+  .lesson-nav{display:none}
+}
+@media (width<=620px){
+  .lesson-header .button{display:none}
+  .lesson-hero{min-height:auto;padding-top:55px;padding-bottom:55px}
+  .lesson-hero h1{font-size:3.15rem}
+  .learning-rules{grid-template-columns:1fr;gap:8px}
+  .course-menu{grid-template-columns:1fr 1fr}
+  .course-menu a{border-right:1px solid var(--line);border-bottom:1px solid var(--line)!important;padding:0 12px;font-size:9px}
+  .course-menu a:nth-child(2n){border-right:0}
+  .course-menu a:nth-last-child(-n+2){border-bottom:0!important}
+  .lesson-card{padding:22px}
+  .lesson-card h3{font-size:25px}
+  .concept-grid,.secure-design-grid,.source-grid{grid-template-columns:1fr}
+  .concept-grid>div,.secure-design-grid>div{min-height:100px}
+  .command-table>div{grid-template-columns:1fr}
+  .command-table code{min-height:42px}
+  .command-table span{min-height:44px;padding-top:13px}
+  .network-flow{grid-template-columns:1fr}
+  .network-flow i{padding:8px}
+  .cia-grid{grid-template-columns:1fr}
+  .lesson-card-top{align-items:flex-start;gap:8px;flex-direction:column}
+}

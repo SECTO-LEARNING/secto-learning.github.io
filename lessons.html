@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn computer basics, Python, Linux, networking, cybersecurity, and secure web development with SECTO's original beginner lessons and safe exercises.">
+  <title>Free Beginner Cybersecurity Lessons — SECTO</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="site.css">
+  <link rel="stylesheet" href="lessons.css">
+  <script src="lessons.js" defer></script>
+</head>
+<body>
+  <main>
+    <div class="notice-bar">
+      <span>SECTO STARTER ACADEMY</span>
+      <p>Original, AI-assisted lessons • Safe practice • No experience required</p>
+    </div>
+
+    <header class="site-header lesson-header">
+      <a class="brand" href="index.html" aria-label="SECTO home">
+        <img class="brand-logo" src="secto-logo.svg" alt="SECTO — Learn. Practice. Protect.">
+      </a>
+      <nav class="lesson-nav" aria-label="Lesson navigation">
+        <a href="index.html">Home</a>
+        <a href="index.html#courses">Courses</a>
+        <a href="#sources">Sources</a>
+      </nav>
+      <a class="button button-small" href="#courseMenu">Choose a course</a>
+    </header>
+
+    <section class="lesson-hero section-shell">
+      <div>
+        <div class="eyebrow"><span></span> START FROM ABSOLUTE ZERO</div>
+        <h1>Learn the foundations.<br><em>Build real understanding.</em></h1>
+        <p>These short lessons explain the ideas behind cybersecurity before introducing tools. Read in order, try only the safe exercises, and mark each lesson complete on this device.</p>
+      </div>
+      <aside class="lesson-progress-card" aria-label="Course progress">
+        <span>YOUR STARTER PROGRESS</span>
+        <strong><b id="completedCount">0</b> / 12</strong>
+        <div class="lesson-progress-track"><i id="progressFill"></i></div>
+        <p id="progressMessage">Start with Computer Foundations.</p>
+      </aside>
+    </section>
+
+    <section class="learning-rules section-shell" aria-label="Responsible learning rules">
+      <strong>Learn responsibly</strong>
+      <p>Use commands and exercises only on your own device, accounts, files, or an approved training environment. SECTO teaches defensive security and does not authorize testing other people’s systems.</p>
+    </section>
+
+    <nav class="course-menu section-shell" id="courseMenu" aria-label="Course menu">
+      <a href="#foundations"><span>01</span>Computer foundations</a>
+      <a href="#python"><span>02</span>Python from zero</a>
+      <a href="#linux"><span>03</span>Linux essentials</a>
+      <a href="#networks"><span>04</span>Networking explained</a>
+      <a href="#defense"><span>05</span>Cyber defense</a>
+      <a href="#web"><span>06</span>Secure web development</a>
+    </nav>
+
+    <section class="lesson-course section-shell section-space" id="foundations">
+      <div class="lesson-course-heading">
+        <div><span class="kicker">COURSE 01 • START HERE</span><h2>Computer Foundations</h2></div>
+        <p>Understand what a computer is doing before learning how to protect it.</p>
+      </div>
+
+      <article class="lesson-card" id="lesson-foundations-1" data-lesson="foundations-1">
+        <div class="lesson-card-top"><span>LESSON 01</span><small>15 MIN • BEGINNER</small></div>
+        <h3>From input to information</h3>
+        <p>A computer receives <strong>input</strong>, follows instructions, stores data, and produces <strong>output</strong>. A keyboard provides input; the processor follows instructions; memory holds active work; storage keeps files after power is turned off; and a screen produces output.</p>
+        <p>Security becomes easier when you know where information travels. Data may be stored on a drive, processed in memory, displayed by an application, or sent across a network. Each location needs suitable protection.</p>
+        <div class="concept-grid">
+          <div><span>CPU</span><p>Follows program instructions and performs calculations.</p></div>
+          <div><span>RAM</span><p>Fast, temporary working space for running programs.</p></div>
+          <div><span>STORAGE</span><p>Keeps the operating system, applications, and files.</p></div>
+          <div><span>NETWORK</span><p>Moves data between devices using agreed rules.</p></div>
+        </div>
+        <div class="safe-task"><strong>SAFE ACTIVITY</strong><p>Open your computer’s system information page. Write down the operating system, installed memory, and storage size. Do not share serial numbers or account details.</p></div>
+        <div class="knowledge-check" data-answer="ram"><strong>Quick check: Which component normally holds active work temporarily?</strong><div><button data-choice="storage">Storage drive</button><button data-choice="ram">RAM</button><button data-choice="screen">Screen</button></div><p class="quiz-result" aria-live="polite"></p></div>
+        <button class="complete-lesson" data-complete="foundations-1">Mark lesson complete</button>
+      </article>
+
+      <article class="lesson-card" id="lesson-foundations-2" data-lesson="foundations-2">
+        <div class="lesson-card-top"><span>LESSON 02</span><small>20 MIN • BEGINNER</small></div>
+        <h3>Files, processes, accounts, and permissions</h3>
+        <p>An <strong>operating system</strong> manages hardware and gives applications a controlled way to use it. A file stores data under a name and location. A process is a running instance of a program. An account connects actions to a user, while permissions decide what that user or process may read, change, or run.</p>
+        <p>File extensions such as <code>.txt</code>, <code>.html</code>, and <code>.py</code> suggest a file’s format, but the extension alone does not prove that a file is safe. Avoid opening unexpected downloads and keep important files backed up.</p>
+        <div class="lesson-example"><span>EXAMPLE PATH</span><code>Documents/SECTO/notes.txt</code><p>This describes a file named <b>notes.txt</b> inside a SECTO folder, which is inside Documents.</p></div>
+        <div class="safe-task"><strong>SAFE ACTIVITY</strong><p>Create a folder named <code>SECTO-Lab</code> in Documents. Inside it, create <code>notes.txt</code> and write one sentence about what an operating system does.</p></div>
+        <div class="knowledge-check" data-answer="process"><strong>Quick check: What is a program called while it is running?</strong><div><button data-choice="folder">A folder</button><button data-choice="process">A process</button><button data-choice="extension">An extension</button></div><p class="quiz-result" aria-live="polite"></p></div>
+        <button class="complete-lesson" data-complete="foundations-2">Mark lesson complete</button>
+      </article>
+    </section>
+
+    <section class="lesson-course lesson-course-tint section-space" id="python">
+      <div class="section-shell">
+        <div class="lesson-course-heading">
+          <div><span class="kicker">COURSE 02 • CODING</span><h2>Python from Zero</h2></div>
+          <p>Learn how a program stores information, makes decisions, and repeats useful work.</p>
+        </div>
+
+        <article class="lesson-card" id="lesson-python-1" data-lesson="python-1">
+          <div class="lesson-card-top"><span>LESSON 03</span><small>20 MIN • BEGINNER</small></div>
+          <h3>Variables and data types</h3>
+          <p>A variable is a readable name that points to a value. Python chooses a data type from the value you assign. Text is a <strong>string</strong>, a whole number is an <strong>integer</strong>, and <code>True</code> or <code>False</code> is a <strong>Boolean</strong>.</p>
+          <pre class="lesson-code" aria-label="Python variables example"><code>device_name = "study-laptop"
+failed_logins = 2
+account_locked = False
+
+print(device_name)
+print(failed_logins)</code></pre>
+          <p>Clear names make programs easier to review. Avoid placing real passwords, secret keys, or private information directly inside source code.</p>
+          <div class="safe-task"><strong>SAFE ACTIVITY</strong><p>On paper or in a local Python editor, create variables for a fictional device name, update count, and whether backup is enabled. Print the three values.</p></div>
+          <div class="knowledge-check" data-answer="boolean"><strong>Quick check: Which type stores True or False?</strong><div><button data-choice="string">String</button><button data-choice="integer">Integer</button><button data-choice="boolean">Boolean</button></div><p class="quiz-result" aria-live="polite"></p></div>
+          <button class="complete-lesson" data-complete="python-1">Mark lesson complete</button>
+        </article>
+
+        <article class="lesson-card" id="lesson-python-2" data-lesson="python-2">
+          <div class="lesson-card-top"><span>LESSON 04</span><small>20 MIN • BEGINNER</small></div>
+          <h3>Conditions and loops</h3>
+          <p>A condition lets a program choose a path. A loop repeats a block of instructions. In Python, indentation shows which instructions belong together.</p>
+          <pre class="lesson-code" aria-label="Python condition and loop example"><code>update_status = ["installed", "pending", "installed"]
+
+for status in update_status:
+    if status == "pending":
+        print("Review this update")
+    else:
+        print("No action needed")</code></pre>
+          <p>The loop checks each fictional status. The condition compares the current value with <code>"pending"</code>. This pattern is useful for organizing defensive checks without touching any outside system.</p>
+          <div class="safe-task"><strong>SAFE ACTIVITY</strong><p>Change the fictional list to contain four statuses. Predict the four output lines before running it, then compare your prediction with the result.</p></div>
+          <div class="knowledge-check" data-answer="for"><strong>Quick check: Which keyword repeats the block for every item?</strong><div><button data-choice="if">if</button><button data-choice="for">for</button><button data-choice="print">print</button></div><p class="quiz-result" aria-live="polite"></p></div>
+          <button class="complete-lesson" data-complete="python-2">Mark lesson complete</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="lesson-course section-shell section-space" id="linux">
+      <div class="lesson-course-heading">
+        <div><span class="kicker">COURSE 03 • SYSTEMS</span><h2>Linux Essentials</h2></div>
+        <p>Use a terminal carefully and understand how Linux organizes access.</p>
+      </div>
+
+      <article class="lesson-card" id="lesson-linux-1" data-lesson="linux-1">
+        <div class="lesson-card-top"><span>LESSON 05</span><small>20 MIN • BEGINNER</small></div>
+        <h3>Your first safe terminal commands</h3>
+        <p>A command-line interface accepts text instructions. The shell reads a command, separates the command name from its options and arguments, and asks the operating system to perform the allowed action.</p>
+        <div class="command-table" role="table" aria-label="Safe beginner Linux commands">
+          <div role="row"><code>pwd</code><span>Show the current folder.</span></div>
+          <div role="row"><code>ls</code><span>List items in the current folder.</span></div>
+          <div role="row"><code>mkdir secto-lab</code><span>Create your own practice folder.</span></div>
+          <div role="row"><code>cd secto-lab</code><span>Move into that folder.</span></div>
+          <div role="row"><code>touch notes.txt</code><span>Create an empty practice file.</span></div>
+        </div>
+        <div class="safe-task"><strong>SAFE ACTIVITY</strong><p>Use only the commands shown above in your own home/Documents area or an approved training terminal. Check your location with <code>pwd</code> before creating anything.</p></div>
+        <div class="knowledge-check" data-answer="pwd"><strong>Quick check: Which command shows your current location?</strong><div><button data-choice="ls">ls</button><button data-choice="pwd">pwd</button><button data-choice="touch">touch</button></div><p class="quiz-result" aria-live="polite"></p></div>
+        <button class="complete-lesson" data-complete="linux-1">Mark lesson complete</button>
+      </article>
+
+      <article class="lesson-card" id="lesson-linux-2" data-lesson="linux-2">
+        <div class="lesson-card-top"><span>LESSON 06</span><small>20 MIN • BEGINNER</small></div>
+        <h3>Users, groups, and permissions</h3>
+        <p>Linux commonly describes file access with three actions: <strong>read</strong>, <strong>write</strong>, and <strong>execute</strong>. Those permissions may be set for the file owner, a group, and everyone else. This supports the principle of least privilege: give an account only the access needed for its task.</p>
+        <pre class="lesson-code" aria-label="Example Linux permission listing"><code>-rw-r--r--  1 learner students  84  notes.txt</code></pre>
+        <p>In this example, the owner may read and write. The group and others may only read. The first character describes the item type; the next nine characters appear in three permission groups.</p>
+        <div class="safe-task"><strong>SAFE ACTIVITY</strong><p>Run <code>ls -l</code> inside your own SECTO practice folder and identify the owner’s first three permission characters. Do not change system files or permissions.</p></div>
+        <div class="knowledge-check" data-answer="least"><strong>Quick check: What means giving only the access needed?</strong><div><button data-choice="least">Least privilege</button><button data-choice="public">Public access</button><button data-choice="duplicate">Duplication</button></div><p class="quiz-result" aria-live="polite"></p></div>
+        <button class="complete-lesson" data-complete="linux-2">Mark lesson complete</button>
+      </article>
+    </section>
+
+    <section class="lesson-course lesson-course-dark section-space" id="networks">
+      <div class="section-shell">
+        <div class="lesson-course-heading light-heading">
+          <div><span class="kicker">COURSE 04 • NETWORKS</span><h2>Networking Explained</h2></div>
+          <p>Follow a web request from a human-readable name to a service.</p>
+        </div>
+
+        <article class="lesson-card" id="lesson-networks-1" data-lesson="networks-1">
+          <div class="lesson-card-top"><span>LESSON 07</span><small>20 MIN • BEGINNER</small></div>
+          <h3>IP addresses, DNS, and packets</h3>
+          <p>Devices use network addresses to exchange data. An IP address identifies a network destination. The Domain Name System, or DNS, helps translate a readable domain name into information a device can use to find the correct service.</p>
+          <div class="network-flow" aria-label="Simplified web lookup flow"><span>Browser</span><i>1</i><span>DNS lookup</span><i>2</i><span>IP destination</span><i>3</i><span>Web server</span></div>
+          <p>Large messages are divided into smaller units often called packets. Networking protocols define how systems format, send, receive, and interpret those units. Reliability and security depend on more than one layer working together.</p>
+          <div class="safe-task"><strong>SAFE ACTIVITY</strong><p>Draw the four-step flow above. Under each step, write what question is being answered: “What name?”, “What address?”, “Where should data go?”, and “Which service responds?”</p></div>
+          <div class="knowledge-check" data-answer="dns"><strong>Quick check: Which system connects domain names with destination information?</strong><div><button data-choice="ram">RAM</button><button data-choice="dns">DNS</button><button data-choice="css">CSS</button></div><p class="quiz-result" aria-live="polite"></p></div>
+          <button class="complete-lesson" data-complete="networks-1">Mark lesson complete</button>
+        </article>
+
+        <article class="lesson-card" id="lesson-networks-2" data-lesson="networks-2">
+          <div class="lesson-card-top"><span>LESSON 08</span><small>20 MIN • BEGINNER</small></div>
+          <h3>Protocols, ports, and web requests</h3>
+          <p>A protocol is an agreed set of communication rules. A port number helps a device direct incoming traffic to the correct network service. The number identifies a service endpoint; it is not a physical socket.</p>
+          <div class="concept-grid compact-concepts">
+            <div><span>HTTPS • 443</span><p>Encrypted web communication.</p></div>
+            <div><span>DNS • 53</span><p>Name and address information.</p></div>
+            <div><span>SSH • 22</span><p>Secure remote administration when authorized.</p></div>
+            <div><span>HTTP • 80</span><p>Unencrypted web communication.</p></div>
+          </div>
+          <p>When you open a secure website, the browser usually resolves the name, connects to the server, establishes protected communication, sends a request, and interprets the response.</p>
+          <div class="safe-task"><strong>SAFE ACTIVITY</strong><p>Match each service above with its typical port. This is a memory exercise only—do not probe or scan networks.</p></div>
+          <div class="knowledge-check" data-answer="443"><strong>Quick check: Which port is commonly associated with HTTPS?</strong><div><button data-choice="22">22</button><button data-choice="53">53</button><button data-choice="443">443</button></div><p class="quiz-result" aria-live="polite"></p></div>
+          <button class="complete-lesson" data-complete="networks-2">Mark lesson complete</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="lesson-course section-shell section-space" id="defense">
+      <div class="lesson-course-heading">
+        <div><span class="kicker">COURSE 05 • DEFENSE</span><h2>Cybersecurity Essentials</h2></div>
+        <p>Think in terms of risk, then apply everyday protections that reduce it.</p>
+      </div>
+
+      <article class="lesson-card" id="lesson-defense-1" data-lesson="defense-1">
+        <div class="lesson-card-top"><span>LESSON 09</span><small>15 MIN • BEGINNER</small></div>
+        <h3>Security goals and risk</h3>
+        <p>Security is not simply “blocking hackers.” It is managing risk to information and services. Three useful goals are <strong>confidentiality</strong> (only authorized access), <strong>integrity</strong> (accurate and trustworthy data), and <strong>availability</strong> (systems and information are usable when needed).</p>
+        <p>NIST’s Cybersecurity Framework organizes outcomes into six broad functions: Govern, Identify, Protect, Detect, Respond, and Recover. For a beginner, this is a reminder that good security includes preparation, protection, awareness, action, and learning—not one magic tool.</p>
+        <div class="cia-grid"><div><b>C</b><span>Confidentiality</span></div><div><b>I</b><span>Integrity</span></div><div><b>A</b><span>Availability</span></div></div>
+        <div class="safe-task"><strong>SAFE ACTIVITY</strong><p>Imagine a school assignment stored online. Write one example of losing confidentiality, one of losing integrity, and one of losing availability. Do not use real names or private incidents.</p></div>
+        <div class="knowledge-check" data-answer="integrity"><strong>Quick check: Which goal focuses on data remaining accurate?</strong><div><button data-choice="availability">Availability</button><button data-choice="integrity">Integrity</button><button data-choice="speed">Speed</button></div><p class="quiz-result" aria-live="polite"></p></div>
+        <button class="complete-lesson" data-complete="defense-1">Mark lesson complete</button>
+      </article>
+
+      <article class="lesson-card" id="lesson-defense-2" data-lesson="defense-2">
+        <div class="lesson-card-top"><span>LESSON 10</span><small>20 MIN • BEGINNER</small></div>
+        <h3>Strong accounts, updates, and phishing awareness</h3>
+        <p>Use a unique password or passphrase for every important account and store them in a trusted password manager. Turn on multifactor authentication (MFA), which asks for another proof in addition to a password. Install software updates because they often fix known security weaknesses.</p>
+        <p>Phishing messages try to create urgency, fear, or excitement so a person acts without checking. Pause before opening unexpected links or attachments. Verify important requests using a contact method you already trust—not contact information provided by the suspicious message.</p>
+        <div class="defense-steps"><div><span>01</span><p><b>Slow down.</b> Urgency is a reason to verify.</p></div><div><span>02</span><p><b>Check context.</b> Was the message expected?</p></div><div><span>03</span><p><b>Verify separately.</b> Use a known website or phone number.</p></div><div><span>04</span><p><b>Report.</b> Use the platform or organization’s reporting option.</p></div></div>
+        <div class="safe-task"><strong>SAFE ACTIVITY</strong><p>Review the security settings of one account you own. Check whether MFA and automatic updates are enabled. Ask a parent, guardian, teacher, or administrator before changing a managed account.</p></div>
+        <div class="knowledge-check" data-answer="separate"><strong>Quick check: How should you verify an unexpected important request?</strong><div><button data-choice="reply">Reply immediately</button><button data-choice="separate">Use a separate trusted contact method</button><button data-choice="forward">Forward it to friends</button></div><p class="quiz-result" aria-live="polite"></p></div>
+        <button class="complete-lesson" data-complete="defense-2">Mark lesson complete</button>
+      </article>
+    </section>
+
+    <section class="lesson-course lesson-course-tint section-space" id="web">
+      <div class="section-shell">
+        <div class="lesson-course-heading">
+          <div><span class="kicker">COURSE 06 • WEB</span><h2>Secure Web Development</h2></div>
+          <p>Learn the three browser languages, then add security from the beginning.</p>
+        </div>
+
+        <article class="lesson-card" id="lesson-web-1" data-lesson="web-1">
+          <div class="lesson-card-top"><span>LESSON 11</span><small>20 MIN • BEGINNER</small></div>
+          <h3>HTML, CSS, and JavaScript</h3>
+          <p>HTML describes the structure and meaning of content. CSS controls presentation and layout. JavaScript adds behavior and interactivity. Keeping these roles understandable makes a website easier to maintain and review.</p>
+          <pre class="lesson-code" aria-label="Semantic HTML example"><code>&lt;article&gt;
+  &lt;h2&gt;Password safety&lt;/h2&gt;
+  &lt;p&gt;Use a unique passphrase for each account.&lt;/p&gt;
+  &lt;button type="button"&gt;Mark complete&lt;/button&gt;
+&lt;/article&gt;</code></pre>
+          <p>Semantic elements such as <code>header</code>, <code>nav</code>, <code>main</code>, and <code>article</code> communicate purpose. Labels, keyboard access, readable contrast, and responsive layout help more people use the site.</p>
+          <div class="safe-task"><strong>SAFE ACTIVITY</strong><p>Create a local HTML file containing one heading, one paragraph, and one button. Open it in your browser. No hosting or account is required.</p></div>
+          <div class="knowledge-check" data-answer="html"><strong>Quick check: Which language gives web content its structure?</strong><div><button data-choice="css">CSS</button><button data-choice="html">HTML</button><button data-choice="dns">DNS</button></div><p class="quiz-result" aria-live="polite"></p></div>
+          <button class="complete-lesson" data-complete="web-1">Mark lesson complete</button>
+        </article>
+
+        <article class="lesson-card" id="lesson-web-2" data-lesson="web-2">
+          <div class="lesson-card-top"><span>LESSON 12</span><small>20 MIN • BEGINNER</small></div>
+          <h3>Build security into the design</h3>
+          <p>Browser checks improve user experience, but important validation must also happen on a trusted server because browser code can be changed by a user. Treat all external input as untrusted until it is checked for the expected type, size, format, and allowed values.</p>
+          <p>Display user-provided content using safe output methods, keep secrets out of frontend files, use HTTPS, apply least privilege, record useful security events without storing sensitive data, and show users errors that help them recover without exposing internal details.</p>
+          <div class="secure-design-grid"><div><span>INPUT</span><p>Accept only expected formats and limits.</p></div><div><span>ACCESS</span><p>Check permission for every protected action.</p></div><div><span>SECRETS</span><p>Keep keys and credentials on trusted systems.</p></div><div><span>OUTPUT</span><p>Render untrusted content with safe methods.</p></div></div>
+          <div class="safe-task"><strong>SAFE ACTIVITY</strong><p>Review a form you created. List its fields, expected data type, reasonable length limit, and whether the field is required. This is a design exercise; do not test other websites.</p></div>
+          <div class="knowledge-check" data-answer="server"><strong>Quick check: Where must important validation also occur?</strong><div><button data-choice="color">In the color palette</button><button data-choice="server">On a trusted server</button><button data-choice="logo">Inside the logo</button></div><p class="quiz-result" aria-live="polite"></p></div>
+          <button class="complete-lesson" data-complete="web-2">Mark lesson complete</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="sources section-shell section-space" id="sources">
+      <div class="lesson-course-heading">
+        <div><span class="kicker">TRANSPARENT RESEARCH</span><h2>Sources and further reading</h2></div>
+        <p>SECTO uses trustworthy references to check facts and choose a learning order. All lesson explanations, examples, activities, and quizzes on this page were written specifically for SECTO.</p>
+      </div>
+      <div class="source-grid">
+        <a href="https://www.nist.gov/cyberframework" target="_blank" rel="noopener"><span>NIST</span><strong>Cybersecurity Framework 2.0</strong><p>Risk and defensive security outcomes.</p></a>
+        <a href="https://www.cisa.gov/secure-our-world" target="_blank" rel="noopener"><span>CISA</span><strong>Secure Our World</strong><p>MFA, phishing, passwords, and updates.</p></a>
+        <a href="https://developer.mozilla.org/en-US/docs/Learn_web_development" target="_blank" rel="noopener"><span>MOZILLA</span><strong>MDN Learn Web Development</strong><p>HTML, CSS, JavaScript, and accessibility.</p></a>
+        <a href="https://docs.python.org/3/tutorial/" target="_blank" rel="noopener"><span>PYTHON</span><strong>The Python Tutorial</strong><p>Language basics and control flow.</p></a>
+        <a href="https://www.icann.org/resources/pages/dns-2022-09-13-en" target="_blank" rel="noopener"><span>ICANN</span><strong>The Domain Name System</strong><p>Domains, IP addresses, and DNS.</p></a>
+        <a href="https://skillsforall.com/course/networking-basics" target="_blank" rel="noopener"><span>CISCO</span><strong>Networking Basics</strong><p>Devices, media, protocols, and data flow.</p></a>
+        <a href="https://linuxcommand.org/tlcl.php" target="_blank" rel="noopener"><span>OPEN BOOK</span><strong>The Linux Command Line</strong><p>William Shotts’ command-line reference.</p></a>
+        <a href="https://github.com/SystemsApproach/book" target="_blank" rel="noopener"><span>OPEN BOOK</span><strong>Computer Networks: A Systems Approach</strong><p>Larry Peterson and Bruce Davie.</p></a>
+      </div>
+      <div class="originality-note"><strong>Originality statement</strong><p>Sources are used for factual checking and further reading. SECTO does not reproduce chapters, paid course material, or another author’s lesson text. AI assistance was used to synthesize a new beginner-friendly structure, followed by an originality and safety review.</p></div>
+    </section>
+
+    <section class="cta-section"><div class="section-shell cta-inner"><div><span class="kicker">12 LESSONS COMPLETE</span><h2>Continue building your foundation.</h2></div><a class="button button-dark" href="index.html#courses">Return to courses <span>→</span></a></div></section>
+
+    <footer class="footer section-shell lesson-footer">
+      <div class="footer-brand"><a class="brand" href="index.html"><img class="brand-logo" src="secto-logo.svg" alt="SECTO — Learn. Practice. Protect."></a><p>Original cybersecurity learning for complete beginners.</p></div>
+      <div class="footer-links"><div><strong>Learn</strong><a href="#foundations">Foundations</a><a href="#python">Python</a><a href="#linux">Linux</a></div><div><strong>Explore</strong><a href="#networks">Networks</a><a href="#defense">Defense</a><a href="#web">Secure web</a></div><div><strong>SECTO</strong><a href="index.html">Home</a><a href="#sources">Sources</a><a href="index.html#about">About</a></div></div>
+      <div class="footer-bottom"><span>© 2026 SECTO Learning</span><span>Defensive education • Practice only with permission</span></div>
+    </footer>
+  </main>
+</body>
+</html>
